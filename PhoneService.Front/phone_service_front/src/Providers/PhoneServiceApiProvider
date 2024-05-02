@@ -1,0 +1,33 @@
+import React, {useState, useEffect} from 'react';
+import axios from "axios";
+
+
+function PhoneServiceApiProvider()
+{
+    let host = 'http://phone_service_api:8080/'
+    let rPath = 'api/PhoneService/GetPhoneConvert?phone=8&TraceId=3a319e66-dccd-4ee9-ac5c-07b0ca766756'
+
+    useEffect(()=>
+    { const fetch = async () =>{
+        try
+        {
+        axios.defaults.headers.get['Access-Control-Allow-Methods'] = '*';
+        axios.defaults.headers.get['Access-Control-Allow-Headers'] = '*';
+        axios.defaults.headers.get['Access-Control-Allow-Credentials'] = 'true';
+
+        await axios.get(host + rPath).then((mainResponse)=> 
+        {        
+            let name = mainResponse.data;
+            console.log(name)
+        })
+        .catch();
+        }       
+        catch(e)
+        {
+    }
+    } 
+    fetch();
+    }, []);
+}
+
+export default PhoneServiceApiProvider;
