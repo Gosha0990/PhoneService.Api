@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  phoneservice.api:
+    hostname: phone_service_api
+    ports:
+    - 5009:8080
+    image: ${DOCKER_REGISTRY-}phoneserviceapi
+    build:
+      context: .
+      dockerfile: PhoneService.Api/Dockerfile
+
+  PhoneService.LoadTests:
+    hostname: phoneService_LoadTests
+    ports:
+    - 5012:8080 
+    image: ${DOCKER_REGISTRY-}phoneserviceloadtests
+    build:
+      context: .
+      dockerfile: PhoneService.LoadTests/Dockerfile
+    environment:
+        PhoneServiceApiUrl: ${PhoneServiceApiUrl}
