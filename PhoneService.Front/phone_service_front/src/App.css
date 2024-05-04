@@ -12,9 +12,14 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+@font-face {
+  font-family: 'SuisseIntl';
+    src: local('SuisseIntl'),
+      url('./fonts/SuisseIntl-Book.otf') format('truetype');
+}
 
 .App-header {
-  background-color: #282c34;
+  background-color: #fdfdfd;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,10 +27,11 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin: 0 0;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #ffffff;
 }
 
 @keyframes App-logo-spin {

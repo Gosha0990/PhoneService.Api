@@ -1,4 +1,4 @@
-const host = 'https://testrate.coffeemania.io';
+const host = 'http://localhost:5009';
 
 function GetHost()
 {

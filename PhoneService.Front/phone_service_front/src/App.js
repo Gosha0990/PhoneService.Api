@@ -1,39 +1,25 @@
 import './App.css';
-import React, {useEffect} from 'react';
-import axios from "axios";
-
+import Input from './Components/Input/Input.jsx'
+import ButtonConvert from './Components/ButtonConvert/ButtonConver';
+import ButtonStartTest from './Components/ButtonStartTest/ButtonStartTest';
+import React, {useState, useEffect} from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
 function App() {
 
   let host = 'http://phone_service_api:8080/'
   let rPath = 'api/PhoneService/GetPhoneConvert?phone=8&TraceId=3a319e66-dccd-4ee9-ac5c-07b0ca766756'
 
-  useEffect(()=>
-  { const fetch = async () =>{
-      try
-      {
-      axios.defaults.headers.get['Access-Control-Allow-Methods'] = '*';
-      axios.defaults.headers.get['Access-Control-Allow-Headers'] = '*';
-      axios.defaults.headers.get['Access-Control-Allow-Credentials'] = 'true';
-
-      await axios.get(host + rPath).then((mainResponse)=> 
-      {        
-          let name = mainResponse.data;
-          console.log(name)
-      })
-      .catch();
-      }       
-      catch(e)
-      {
-  }
-  } 
-  fetch();
-  }, []);
+  const dispatch = useDispatch();
+  const phone = useSelector(state => state.phone);
+  console.log(phone);
 
   return (
     <div className="App">
       <header className="App-header">
-
+        <Input></Input>
+        <ButtonConvert></ButtonConvert>
+        <ButtonStartTest></ButtonStartTest>
       </header>
     </div>
   );

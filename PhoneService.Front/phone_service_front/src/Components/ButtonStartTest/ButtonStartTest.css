@@ -1,0 +1,40 @@
+
+.font-dancing-script {
+    font-family: "SuisseIntl";
+  }
+
+
+.button-style-not-pressd
+{
+    width: 360px;
+    height: 50px;
+    flex-shrink: 0; 
+    border-radius: 6px;
+    border: 1px solid var(--Coffeemania-Orange, #F3BAB2);
+    color: var(--Coffeemania-Orange,#F3BAB2);
+    text-align: center;
+    font-family: "FAgoraSlabPro";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal; 
+    background-color: #FFF;
+    
+}
+
+.button-style-pressd-test
+{
+    width: 360px;
+    height: 50px;
+    border-radius: 6px;
+    background: var(--Coffeemania-Orange, #4144ec); 
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: "FAgoraSlabPro";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    border: 1px solid var(--Coffeemania-Orange, #4144ec);
+
+}
