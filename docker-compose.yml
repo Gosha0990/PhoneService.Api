@@ -20,3 +20,17 @@ services:
       dockerfile: PhoneService.LoadTests/Dockerfile
     environment:
         PhoneServiceApiUrl: ${PhoneServiceApiUrl}
+        
+  PhoneService.Front:
+    hostname: phoneService_Front
+    ports:
+    - 5013:3000
+    image: ${DOCKER_REGISTRY-}phoneservicefront
+    build:
+      context: .
+      dockerfile: phone_service_front/Dockerfile
+      args:
+        MAIN_HOST_API: 'http://localhost:5009'
+        LOADTEST_HOST_API: 'http://localhost:5012'
+    restart: always
+

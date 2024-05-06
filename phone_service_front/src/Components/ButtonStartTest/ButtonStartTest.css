@@ -22,19 +22,19 @@
     
 }
 
-.button-style-pressd
+.button-style-pressd-test
 {
     width: 360px;
     height: 50px;
     border-radius: 6px;
-    background: var(--Coffeemania-Orange, #EC4C41); 
-    color: var(--White, #FFF);
+    background: var(--Coffeemania-Orange, #ffffff); 
+    color: var(--White, #4c41ec);
     text-align: center;
     font-family: "FAgoraSlabPro";
     font-size: 15px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
-    border: 1px solid var(--Coffeemania-Orange, #EC4C41);
+    border: 1px solid var(--Coffeemania-Orange, #4c41ec);
 
 }

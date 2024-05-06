@@ -10,8 +10,8 @@
     height: 50px;
     flex-shrink: 0; 
     border-radius: 6px;
-    border: 1px solid var(--Coffeemania-Orange, #F3BAB2);
-    color: var(--Coffeemania-Orange,#F3BAB2);
+    border: 1px solid var(--Coffeemania-Orange, #ff2002);
+    color: var(--Coffeemania-Orange,#ff2002);
     text-align: center;
     font-family: "FAgoraSlabPro";
     font-size: 15px;
@@ -22,19 +22,19 @@
     
 }
 
-.button-style-pressd-test
+.button-style-pressd
 {
     width: 360px;
     height: 50px;
     border-radius: 6px;
-    background: var(--Coffeemania-Orange, #4144ec); 
-    color: var(--White, #FFF);
+    background: var(--Coffeemania-Orange, #ffffff); 
+    color: var(--White, #EC4C41);
     text-align: center;
     font-family: "FAgoraSlabPro";
     font-size: 15px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
-    border: 1px solid var(--Coffeemania-Orange, #4144ec);
+    border: 1px solid var(--Coffeemania-Orange, #EC4C41);
 
 }

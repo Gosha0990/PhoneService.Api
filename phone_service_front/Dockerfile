@@ -9,15 +9,17 @@ ENV PATH /app/node_modules/.bin:$PATH
 
 # install app dependencies
 COPY package.json ./
-COPY package-lock.json ./
+
 RUN npm install
 
 ARG MAIN_HOST_API
 
 ENV MAIN_HOST_API $MAIN_HOST_API
 
+
+
 # add app
-COPY . ./
+COPY . .
 
 # start app
 CMD ["npm", "start"] 

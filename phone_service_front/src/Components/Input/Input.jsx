@@ -13,7 +13,7 @@ function Input()
 
     const addCash = (phone) => 
     {
-        dispatch({type: "ADD_PHONE", payload: val})
+        dispatch({type: "ADD_PHONE", payload: phone})
     }
 
     useEffect(() => {
@@ -22,23 +22,19 @@ function Input()
 
     const onChange = e => {
         setVal(e.target.value);
-        addCash();
     };
-
+    addCash(val);
     return(
         <div>
-        <div className='textInput'>
-          Введите номер толефона
-        </div>
             <div>
                 <h1></h1>
             </div>
-            <textarea o className="mainStyle" placeholder="Введите номер телефона" 
+            <textarea className="mainStyle" placeholder="Введите номер телефона" 
             rows="1"
             onChange={onChange}
             value={val}
             ref={textAreaRef}
-            maxLength={20}></textarea>
+            maxLength={40}></textarea>
         </div>
     );
 }

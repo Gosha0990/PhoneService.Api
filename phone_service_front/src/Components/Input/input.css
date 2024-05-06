@@ -1,20 +1,13 @@
 .mainStyle
 {
-    display: flex;
-    width: 335px;
-    height: 30px;
+    width: 315px;
     padding: 14px 12px;
-    align-items: flex-start;
     font-family: 'SuisseIntl';
     text-align: center;
     font-size: 14px; 
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
     font-feature-settings: 'clig' off, 'liga' off; 
     gap: 10px; 
     border-radius: 6px;
-    border: 1px solid var(--Stroke, #DEDEDE);
     resize: none;
     border: 1px solid;
 }
@@ -27,6 +20,4 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 40px;
-    line-height: 0px; /* 143.75% */ 
-    width: auto; 
 }

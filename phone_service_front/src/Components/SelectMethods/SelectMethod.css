@@ -1,0 +1,20 @@
+.mainStyleSelector
+{
+    display: flex-start;
+    width: 335px;
+    height: 20px;
+    align-items: flex-start;
+    font-family: 'SuisseIntl';
+    font-size: 14px; 
+    font-style: normal;
+    border-radius: 6px;
+    resize: none;
+    border: 1px solid;
+}
+
+.textInputSelector
+{
+    color: var(--text_black, #212121);
+    font-family: 'SuisseIntl';
+    font-size: 15px;
+}
